@@ -1,0 +1,41 @@
+.datosPersonales, .fieldsetSexoEstudios > fieldset{
+  display: flex;
+  flex-direction: column;
+}
+
+.datosPersonales > input{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.datosPersonales > label{
+  margin-left: 5em;
+}
+
+.fieldsetSexoEstudios {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.fieldsetSexoEstudios > fieldset > label{
+  margin: 3px auto;
+}
+
+fieldset {
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="submit"]{
+  margin: 10px auto 0;
+  padding: 3px 15px;
+  float: right;
+}
