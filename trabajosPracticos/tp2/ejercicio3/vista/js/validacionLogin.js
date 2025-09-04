@@ -16,13 +16,13 @@ $(document).ready(function(){
     // Indico el formulario y sus reglas
     $("#formLogin").validate({
         errorClass: "invalid-feedback", // clase Bootstrap
-    errorElement: "div", // para que sea un div debajo del input
-    highlight: function(element) {
-        $(element).addClass("is-invalid");
-    },
-    unhighlight: function(element) {
-        $(element).removeClass("is-invalid");
-    },
+        errorElement: "div", // para que sea un div debajo del input
+        highlight: function(element) {
+            $(element).addClass("is-invalid");
+        },
+        unhighlight: function(element) {
+            $(element).removeClass("is-invalid");
+        },
         // Reglas:
         rules:{
             username:{

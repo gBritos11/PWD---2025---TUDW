@@ -72,6 +72,19 @@ $(document).ready(function(){
         deporte: {
             // Mensajes vacíos, ya que no es obligatorio
         }
+        },
+        errorClass: "invalid-feedback", // clase Bootstrap
+        errorElement: "div", // para que sea un div debajo del input
+        highlight: function(element) {
+            $(element).addClass("is-invalid");
+        },
+        unhighlight: function(element) {
+            $(element).removeClass("is-invalid");
+        },
+        // Para que el mensaje se ubique correctamente
+        errorPlacement: function(error, element) {
+            error.addClass("invalid-feedback");
+            error.insertAfter(element);
         }
     })
 })
